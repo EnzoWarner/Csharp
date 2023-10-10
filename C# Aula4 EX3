@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp8
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double F, C;
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.SetCursorPosition(7, 2);
+            Console.WriteLine("╔═══════════════════════════════════╗");
+            Console.SetCursorPosition(7, 3);
+            Console.WriteLine("║                                   ║");
+            Console.SetCursorPosition(7, 4);
+            Console.WriteLine("╚═══════════════════════════════════╝");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.SetCursorPosition(10, 3);
+            Console.Write("Insira o valor Fahrenheit: ");
+            F = Convert.ToDouble(Console.ReadLine());
+            C = ((F - 32) / 9) * 5 ;
+            C = Math.Round(C,2);
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.SetCursorPosition(10, 3);
+            Console.Write("Resultado convertido é: " + C + "Celsius");
+            Console.ReadKey();
+        }
+    }
+}
