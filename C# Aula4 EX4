@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp8
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double n, n1, n2, r, r1;
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.SetCursorPosition(7, 2);
+            Console.WriteLine("╔════════════════════════════════════════════╗");
+            Console.SetCursorPosition(7, 3);
+            Console.WriteLine("║                                            ║");
+            Console.SetCursorPosition(7, 4);
+            Console.WriteLine("║                                            ║");
+            Console.SetCursorPosition(7, 5);
+            Console.WriteLine("╚════════════════════════════════════════════╝");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.SetCursorPosition(10, 3);
+            Console.Write("Insira seu peso Kg: ");
+            n = Convert.ToDouble(Console.ReadLine());
+            r = 1000;
+            r1 = 1.10;
+            n1 = n * r;
+            n2 = n * r1;
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.SetCursorPosition(10, 3);
+            Console.Write("Resultado convertido em gramas é : " + n1 + "g");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.SetCursorPosition(10, 4);
+            Console.Write("O peso com um acréscimo de 10% é : " + n2 + "Kg");
+            Console.ReadKey();
+        }
+    }
+}
