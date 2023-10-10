@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double A, B, B2, C, D1, D2, X1, X2, R, R2;
+            Console.WriteLine("Digite o numero");
+            A = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite o numero");
+            B = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite o numero");
+            C = Convert.ToDouble(Console.ReadLine());
+            B2 = Math.Pow(B, 2);
+            D1 = 4;
+            D2 = 2;
+            R = B2 - D1 * A * C;
+            R2 = Math.Sqrt(R);
+            X1 = (-B + R2) / (D2 * A);
+            X2 = (-B - R2) / (D2 * A);
+            Console.WriteLine("O delta é: " + R);
+            Console.WriteLine("O X1 É: " + X1);
+            Console.WriteLine("O X2 é: " + X2);
+            Console.ReadKey();
+        }
+    }
+}
