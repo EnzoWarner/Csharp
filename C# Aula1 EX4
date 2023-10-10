@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Enzo_Warner_ADS_programa_média_aritmética
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double n1, n2, n3, r, r2;
+            Console.WriteLine("Digite o primeiro numero");
+            n1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Digite o segundo numero");
+            n2 = Convert.ToDouble(Console.ReadLine());  
+            Console.WriteLine("Digite o terceiro numero");
+            n3 = Convert.ToDouble(Console.ReadLine());
+            r = n1 + n2 + n3;
+            r2 = r / 3;
+            Console.WriteLine("A média aritmética: " + r2);
+            Console.ReadKey();
+        }
+    }
+}
