@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+                string nome, nome1, nome2;
+                Console.WriteLine("Digite seu nome:");
+                nome = Console.ReadLine();
+
+                nome1 = nome.Substring(5, 10);
+                nome2 = nome.Replace("a", "o");
+
+                Console.WriteLine("Nome: " + nome);
+                Console.WriteLine("O conteúdo da string do caractere cinco ao dez: " + nome1);
+                Console.WriteLine("Troca de 'a' pelo 'o': " + nome2);
+                Console.ReadKey();
+        }
+    }
+}
