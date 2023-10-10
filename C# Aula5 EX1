@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp10
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Title = "Programa Operador Lógico";
+            double n, n1, n2;
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.Clear();
+            Console.Write("Digite N1: ");
+            n = Convert.ToDouble(Console.ReadLine());
+
+            if (n > 20)
+            {
+                Console.ForegroundColor = ConsoleColor.Black;
+                n1 = n / 2;
+                Console.WriteLine("O resultado é: " + n1 );
+            }
+            if (n < 20)
+            {
+                Console.ForegroundColor = ConsoleColor.White;
+                n2 = n * 2;
+                Console.WriteLine("O resultado é: " + n2 );
+
+            }
+            else if (n == 20)
+            {
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.WriteLine("O resultado é: " + n );
+            }
+            Console.ReadKey();
+        }
+    }
+}
