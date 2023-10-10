@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double n1, n2, r;
+            Console.WriteLine("Digite o numero");
+            n1 = Convert.ToDouble(Console.ReadLine());
+            n2 = 1;
+            r = n1 - n2;
+            Console.WriteLine("O antecessor é igual á: " + r);
+            Console.ReadKey();
+        }
+    }
+}
