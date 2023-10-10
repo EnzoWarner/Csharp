@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double A, D, P, N1, PI, R, R2;
+            Console.WriteLine("Digite o numero");
+            R = Convert.ToDouble(Console.ReadLine());
+            PI = Math.PI;
+            N1 = 2;
+            R2 = Math.Pow(R, 2);
+            A = PI * R2;
+            D = N1 * R;
+            P = N1 * PI * R;
+            Console.WriteLine("A área do quadrado é: " + A);
+            Console.WriteLine("O diâmetro do quadrado é: " + D); 
+            Console.WriteLine("O perímetro do quadrado é: " + P);
+            Console.ReadKey();
+        }
+    }
+}
