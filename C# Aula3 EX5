@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nome, nome_do_meio, nome_final;
+            Console.Write("Insira o seu nome completo: ");
+            nome = Console.ReadLine();
+            nome = nome.Trim();
+            nome_do_meio = nome.Substring(0, nome.IndexOf(" "));
+            nome_final = nome.Substring(nome.LastIndexOf(" "));
+            nome_do_meio = nome_do_meio.Replace(" ", "").ToLower();
+            nome_final = nome_final.Replace(" ", "").ToLower();
+            Console.WriteLine("O seu e-mail é: " + nome_do_meio + "." + nome_final + "@fatec.sp.gov.br");
+            Console.ReadKey();
+        }
+    }
+}
